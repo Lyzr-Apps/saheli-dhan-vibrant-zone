@@ -118,6 +118,8 @@ export default function Home() {
   const [profitData, setProfitData] = useState<ProfitCompanionResponse | null>(null)
   const [summaryData, setSummaryData] = useState<SummaryCompanionResponse | null>(null)
   const [pricingData, setPricingData] = useState<PricingGuideResponse | null>(null)
+  const [pricingInput, setPricingInput] = useState('')
+  const [pricingLoading, setPricingLoading] = useState(false)
 
   // History data (mock data for now)
   const [historyItems] = useState<HistoryItem[]>([
@@ -438,6 +440,7 @@ export default function Home() {
       <div className="px-4 pb-6 pt-4 bg-white border-t-2 border-orange-200">
         <div className="flex gap-3 max-w-2xl mx-auto">
           <Input
+            key="chat-input"
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && handleSendMessage(userInput)}
@@ -613,26 +616,23 @@ export default function Home() {
     </div>
   )
 
-  const PricingScreen = () => {
-    const [pricingInput, setPricingInput] = useState('')
-    const [pricingLoading, setPricingLoading] = useState(false)
-
-    const handleGetPricingAdvice = async () => {
-      if (!pricingInput.trim()) {
-        alert('Please enter what you want pricing advice for')
-        return
-      }
-
-      setPricingLoading(true)
-      const result = await callAIAgent(pricingInput, AGENT_IDS.PRICING_GUIDE, { session_id: sessionId })
-
-      if (result.success && result.response.result) {
-        setPricingData(result.response.result as PricingGuideResponse)
-      }
-
-      setPricingLoading(false)
+  const handleGetPricingAdvice = async () => {
+    if (!pricingInput.trim()) {
+      alert('Please enter what you want pricing advice for')
+      return
     }
 
+    setPricingLoading(true)
+    const result = await callAIAgent(pricingInput, AGENT_IDS.PRICING_GUIDE, { session_id: sessionId })
+
+    if (result.success && result.response.result) {
+      setPricingData(result.response.result as PricingGuideResponse)
+    }
+
+    setPricingLoading(false)
+  }
+
+  const PricingScreen = () => {
     return (
       <div className="flex flex-col h-screen bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50">
         {/* Header */}
@@ -660,6 +660,7 @@ export default function Home() {
                     Tell me what product you want pricing advice for:
                   </p>
                   <Input
+                    key="pricing-input"
                     value={pricingInput}
                     onChange={(e) => setPricingInput(e.target.value)}
                     placeholder="e.g., homemade pickles, samosas..."
