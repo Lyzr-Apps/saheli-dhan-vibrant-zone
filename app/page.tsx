@@ -13,7 +13,7 @@
  * 6. Pricing Guide Agent: 69858ce46417bacaca9cf927
  */
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { callAIAgent, NormalizedAgentResponse } from '@/lib/aiAgent'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -200,7 +200,7 @@ export default function Home() {
     }
   }
 
-  const handleSendMessage = async (message: string) => {
+  const handleSendMessage = useCallback(async (message: string) => {
     if (!message.trim()) return
 
     // Add user message to chat
@@ -268,11 +268,11 @@ export default function Home() {
     }
 
     setLoading(false)
-  }
+  }, [currentAgent, sessionId])
 
-  const handleOptionClick = (option: string) => {
+  const handleOptionClick = useCallback((option: string) => {
     handleSendMessage(option)
-  }
+  }, [handleSendMessage])
 
   const handleVoiceClick = () => {
     alert('Voice input will be available soon! For now, please type your message.')
@@ -440,7 +440,6 @@ export default function Home() {
       <div className="px-4 pb-6 pt-4 bg-white border-t-2 border-orange-200">
         <div className="flex gap-3 max-w-2xl mx-auto">
           <Input
-            key="chat-input"
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && handleSendMessage(userInput)}
@@ -660,7 +659,6 @@ export default function Home() {
                     Tell me what product you want pricing advice for:
                   </p>
                   <Input
-                    key="pricing-input"
                     value={pricingInput}
                     onChange={(e) => setPricingInput(e.target.value)}
                     placeholder="e.g., homemade pickles, samosas..."
