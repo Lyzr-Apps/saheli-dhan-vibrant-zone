@@ -1,0 +1,30 @@
+{
+  "agent_name": "Summary Companion Agent",
+  "agent_id": "69858cc8c613a65b3c41947c",
+  "test_message": "Show me my weekly summary",
+  "expected_purpose": "weekly_summary",
+  "timestamp": "2026-02-06T06:42:18.752476",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "weekSummary": "It was a good week for you!",
+      "wins": [
+        "You recorded sales 5 times this week",
+        "You consistently tracked your expenses",
+        "You identified a pattern of increased sales over the weekend"
+      ],
+      "concerns": [
+        "Expenses were a bit high, but that's okay",
+        "Consider dedicating some time to marketing"
+      ],
+      "encouragement": "This coming week, try to record sales daily - you've got this! Keep up the wonderful work!"
+    },
+    "metadata": {
+      "agent_name": "Summary Companion Agent",
+      "timestamp": "2023-10-07T10:00:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"weekSummary\": \"It was a good week for you!\",\n    \"wins\": [\n      \"You recorded sales 5 times this week\",\n      \"You consistently tracked your expenses\",\n      \"You identified a pattern of increased sales over the weekend\"\n    ],\n    \"concerns\": [\n      \"Expenses were a bit high, but that's okay\",\n      \"Consider dedicating some time to marketing\"\n    ],\n    \"encouragement\": \"This coming week, try to record sales daily - you've got this! Keep up the wonderful work!\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Summary Companion Agent\",\n    \"timestamp\": \"2023-10-07T10:00:00Z\"\n  }\n}"
+}

@@ -1,0 +1,60 @@
+{
+  "agent_name": "Expense Tracker Agent",
+  "agent_id": "69858c94a791e6e318b8dee8",
+  "agent_purpose": "expense_tracking",
+  "description": "Helps users capture business expenses with flexible inputs and range selections",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "question": "string",
+      "categories": [
+        "string"
+      ],
+      "confirmation": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "question": "About how much did you spend?",
+      "categories": [
+        "Supplies",
+        "Transport",
+        "Food/Snacks",
+        "Utilities",
+        "Other"
+      ],
+      "confirmation": ""
+    },
+    "metadata": {
+      "agent_name": "Expense Tracker Agent",
+      "timestamp": "2023-11-30T17:09:45Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T06:42:04.737387",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "question": "About how much did you spend?",
+      "categories": [
+        "Supplies",
+        "Transport",
+        "Food/Snacks",
+        "Utilities",
+        "Other"
+      ],
+      "confirmation": ""
+    },
+    "metadata": {
+      "agent_name": "Expense Tracker Agent",
+      "timestamp": "2023-11-30T17:09:45Z"
+    }
+  },
+  "test_passed": true
+}

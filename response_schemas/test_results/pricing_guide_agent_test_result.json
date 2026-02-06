@@ -1,0 +1,22 @@
+{
+  "agent_name": "Pricing Guide Agent",
+  "agent_id": "69858ce46417bacaca9cf927",
+  "test_message": "Should I change my prices for my homemade pickles?",
+  "expected_purpose": "pricing_advice",
+  "timestamp": "2026-02-06T06:42:25.685234",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "suggestion": "You might consider slightly adjusting your prices. Other people selling homemade pickles usually charge around 200-250, but if you're charging less, you could think about adding a little more value to your hard work. Your pickle is really good - you could try a small increase!",
+      "reasoning": "In the market, similar homemade pickles tend to sell for a bit more, reflecting the quality and effort involved. Your hard work deserves good value, so your pricing can match market standards.",
+      "isOptional": true
+    },
+    "metadata": {
+      "agent_name": "Pricing Guide Agent",
+      "timestamp": "ISO timestamp"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"suggestion\": \"You might consider slightly adjusting your prices. Other people selling homemade pickles usually charge around 200-250, but if you're charging less, you could think about adding a little more value to your hard work. Your pickle is really good - you could try a small increase!\",\n    \"reasoning\": \"In the market, similar homemade pickles tend to sell for a bit more, reflecting the quality and effort involved. Your hard work deserves good value, so your pricing can match market standards.\",\n    \"isOptional\": true\n  },\n  \"metadata\": {\n    \"agent_name\": \"Pricing Guide Agent\",\n    \"timestamp\": \"ISO timestamp\"\n  }\n}"
+}

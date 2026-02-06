@@ -1,0 +1,28 @@
+{
+  "agent_name": "Expense Tracker Agent",
+  "agent_id": "69858c94a791e6e318b8dee8",
+  "test_message": "I spent some money on flour and oil today",
+  "expected_purpose": "expense_tracking",
+  "timestamp": "2026-02-06T06:42:04.736946",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "question": "About how much did you spend?",
+      "categories": [
+        "Supplies",
+        "Transport",
+        "Food/Snacks",
+        "Utilities",
+        "Other"
+      ],
+      "confirmation": ""
+    },
+    "metadata": {
+      "agent_name": "Expense Tracker Agent",
+      "timestamp": "2023-11-30T17:09:45Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"question\": \"About how much did you spend?\",\n    \"categories\": [\"Supplies\", \"Transport\", \"Food/Snacks\", \"Utilities\", \"Other\"],\n    \"confirmation\": \"\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Expense Tracker Agent\",\n    \"timestamp\": \"2023-11-30T17:09:45Z\"\n  }\n}"
+}

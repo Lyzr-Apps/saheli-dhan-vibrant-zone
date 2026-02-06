@@ -1,0 +1,54 @@
+{
+  "agent_name": "Gentle Reminder Agent",
+  "agent_id": "69858c60ab4bf65a66ad081a",
+  "agent_purpose": "greeting_and_reminders",
+  "description": "Provides warm greetings and gentle reminders about unrecorded business activities",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "greeting": "string",
+      "reminders": [
+        "string"
+      ],
+      "encouragement": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "greeting": "Good morning! How nice to have you here.",
+      "reminders": [
+        "I hope your business is thriving. Would you like to jot down any sales from yesterday?",
+        "Maybe there were some expenses too, want to record them? Just if you feel like it."
+      ],
+      "encouragement": "You're doing such an amazing job managing everything. Keep it up!"
+    },
+    "metadata": {
+      "agent_name": "Gentle Reminder Agent",
+      "timestamp": "2023-11-01T10:30:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T06:41:51.845069",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "greeting": "Good morning! How nice to have you here.",
+      "reminders": [
+        "I hope your business is thriving. Would you like to jot down any sales from yesterday?",
+        "Maybe there were some expenses too, want to record them? Just if you feel like it."
+      ],
+      "encouragement": "You're doing such an amazing job managing everything. Keep it up!"
+    },
+    "metadata": {
+      "agent_name": "Gentle Reminder Agent",
+      "timestamp": "2023-11-01T10:30:00Z"
+    }
+  },
+  "test_passed": true
+}

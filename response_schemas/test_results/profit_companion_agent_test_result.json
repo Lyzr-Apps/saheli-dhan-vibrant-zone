@@ -1,0 +1,23 @@
+{
+  "agent_name": "Profit Companion Agent",
+  "agent_id": "69858cad094c8b2d4207dd31",
+  "test_message": "How am I doing this week with my business?",
+  "expected_purpose": "financial_status",
+  "timestamp": "2026-02-06T06:42:11.663625",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "mood": "happy",
+      "message": "You're doing wonderfully! This week, your business is like a flourishing garden. Sales have been strong and your efforts are truly blossoming.",
+      "visualization": "smiling sun",
+      "encouragement": "Keep up the great work! Your positive energy is shining through your sales. Perhaps focus a bit more on the weekends when you tend to see more customers."
+    },
+    "metadata": {
+      "agent_name": "Profit Companion Agent",
+      "timestamp": "2023-11-02T11:42:19Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"mood\": \"happy\",\n    \"message\": \"You're doing wonderfully! This week, your business is like a flourishing garden. Sales have been strong and your efforts are truly blossoming.\",\n    \"visualization\": \"smiling sun\",\n    \"encouragement\": \"Keep up the great work! Your positive energy is shining through your sales. Perhaps focus a bit more on the weekends when you tend to see more customers.\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Profit Companion Agent\",\n    \"timestamp\": \"2023-11-02T11:42:19Z\"\n  }\n}"
+}

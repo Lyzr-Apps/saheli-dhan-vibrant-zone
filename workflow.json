@@ -1,0 +1,108 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "User Input",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "gentle_reminder_agent",
+      "type": "Agent",
+      "label": "Gentle Reminder Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69858c60ab4bf65a66ad081a"
+    },
+    {
+      "id": "sales_recording_agent",
+      "type": "Agent",
+      "label": "Sales Recording Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69858c7bc613a65b3c419477"
+    },
+    {
+      "id": "expense_tracker_agent",
+      "type": "Agent",
+      "label": "Expense Tracker Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69858c94a791e6e318b8dee8"
+    },
+    {
+      "id": "profit_companion_agent",
+      "type": "Agent",
+      "label": "Profit Companion Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69858cad094c8b2d4207dd31"
+    },
+    {
+      "id": "summary_companion_agent",
+      "type": "Agent",
+      "label": "Summary Companion Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69858cc8c613a65b3c41947c"
+    },
+    {
+      "id": "pricing_guide_agent",
+      "type": "Agent",
+      "label": "Pricing Guide Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69858ce46417bacaca9cf927"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Agent Response",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_node",
+      "target": "gentle_reminder_agent"
+    },
+    {
+      "source": "input_node",
+      "target": "sales_recording_agent"
+    },
+    {
+      "source": "input_node",
+      "target": "expense_tracker_agent"
+    },
+    {
+      "source": "input_node",
+      "target": "profit_companion_agent"
+    },
+    {
+      "source": "input_node",
+      "target": "summary_companion_agent"
+    },
+    {
+      "source": "input_node",
+      "target": "pricing_guide_agent"
+    },
+    {
+      "source": "gentle_reminder_agent",
+      "target": "output_node"
+    },
+    {
+      "source": "sales_recording_agent",
+      "target": "output_node"
+    },
+    {
+      "source": "expense_tracker_agent",
+      "target": "output_node"
+    },
+    {
+      "source": "profit_companion_agent",
+      "target": "output_node"
+    },
+    {
+      "source": "summary_companion_agent",
+      "target": "output_node"
+    },
+    {
+      "source": "pricing_guide_agent",
+      "target": "output_node"
+    }
+  ]
+}

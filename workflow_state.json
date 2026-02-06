@@ -1,0 +1,53 @@
+{
+  "workflow_name": "Saheli Smart Home Business Companion",
+  "created_at": "2026-02-06",
+  "total_agents": 6,
+  "agents": [
+    {
+      "name": "Gentle Reminder Agent",
+      "agent_id": "69858c60ab4bf65a66ad081a",
+      "type": "independent",
+      "purpose": "greeting_and_reminders",
+      "trigger": "App open event"
+    },
+    {
+      "name": "Sales Recording Agent",
+      "agent_id": "69858c7bc613a65b3c419477",
+      "type": "independent",
+      "purpose": "sales_recording",
+      "trigger": "Record Sale button on Home"
+    },
+    {
+      "name": "Expense Tracker Agent",
+      "agent_id": "69858c94a791e6e318b8dee8",
+      "type": "independent",
+      "purpose": "expense_tracking",
+      "trigger": "Add Expense button on Home"
+    },
+    {
+      "name": "Profit Companion Agent",
+      "agent_id": "69858cad094c8b2d4207dd31",
+      "type": "independent",
+      "purpose": "financial_status",
+      "trigger": "How am I doing? button on Home"
+    },
+    {
+      "name": "Summary Companion Agent",
+      "agent_id": "69858cc8c613a65b3c41947c",
+      "type": "independent",
+      "purpose": "weekly_summary",
+      "trigger": "Scheduled weekly + Weekly Summary button"
+    },
+    {
+      "name": "Pricing Guide Agent",
+      "agent_id": "69858ce46417bacaca9cf927",
+      "type": "independent",
+      "purpose": "pricing_guidance",
+      "trigger": "Should I change prices? or automatic gentle alert"
+    }
+  ],
+  "workflow_structure": {
+    "pattern": "independent_agents",
+    "description": "6 independent agents for home business management with compassionate, supportive personalities designed for Indian housewives"
+  }
+}

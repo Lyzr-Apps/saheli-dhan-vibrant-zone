@@ -1,0 +1,49 @@
+{
+  "agent_name": "Profit Companion Agent",
+  "agent_id": "69858cad094c8b2d4207dd31",
+  "agent_purpose": "financial_status",
+  "description": "Explains business financial status using friendly visuals and encouraging narratives",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "mood": "string",
+      "message": "string",
+      "visualization": "string",
+      "encouragement": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "mood": "happy",
+      "message": "You're doing wonderfully! This week, your business is like a flourishing garden. Sales have been strong and your efforts are truly blossoming.",
+      "visualization": "smiling sun",
+      "encouragement": "Keep up the great work! Your positive energy is shining through your sales. Perhaps focus a bit more on the weekends when you tend to see more customers."
+    },
+    "metadata": {
+      "agent_name": "Profit Companion Agent",
+      "timestamp": "2023-11-02T11:42:19Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T06:42:11.663997",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "mood": "happy",
+      "message": "You're doing wonderfully! This week, your business is like a flourishing garden. Sales have been strong and your efforts are truly blossoming.",
+      "visualization": "smiling sun",
+      "encouragement": "Keep up the great work! Your positive energy is shining through your sales. Perhaps focus a bit more on the weekends when you tend to see more customers."
+    },
+    "metadata": {
+      "agent_name": "Profit Companion Agent",
+      "timestamp": "2023-11-02T11:42:19Z"
+    }
+  },
+  "test_passed": true
+}

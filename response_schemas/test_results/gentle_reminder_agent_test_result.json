@@ -1,0 +1,25 @@
+{
+  "agent_name": "Gentle Reminder Agent",
+  "agent_id": "69858c60ab4bf65a66ad081a",
+  "test_message": "Good morning",
+  "expected_purpose": "greeting",
+  "timestamp": "2026-02-06T06:41:51.844369",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "greeting": "Good morning! How nice to have you here.",
+      "reminders": [
+        "I hope your business is thriving. Would you like to jot down any sales from yesterday?",
+        "Maybe there were some expenses too, want to record them? Just if you feel like it."
+      ],
+      "encouragement": "You're doing such an amazing job managing everything. Keep it up!"
+    },
+    "metadata": {
+      "agent_name": "Gentle Reminder Agent",
+      "timestamp": "2023-11-01T10:30:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"greeting\": \"Good morning! How nice to have you here.\",\n    \"reminders\": [\"I hope your business is thriving. Would you like to jot down any sales from yesterday?\", \"Maybe there were some expenses too, want to record them? Just if you feel like it.\"],\n    \"encouragement\": \"You're doing such an amazing job managing everything. Keep it up!\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Gentle Reminder Agent\",\n    \"timestamp\": \"2023-11-01T10:30:00Z\"\n  }\n}"
+}

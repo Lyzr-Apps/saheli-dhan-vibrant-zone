@@ -1,0 +1,27 @@
+{
+  "agent_name": "Sales Recording Agent",
+  "agent_id": "69858c7bc613a65b3c419477",
+  "test_message": "I want to record a sale - I sold 5 pieces of samosas for 100 rupees",
+  "expected_purpose": "sales_recording",
+  "timestamp": "2026-02-06T06:41:57.213815",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "question": "When did you sell it?",
+      "step": 1,
+      "options": [
+        "today",
+        "yesterday",
+        "this week"
+      ],
+      "confirmation": ""
+    },
+    "metadata": {
+      "agent_name": "Sales Recording Agent",
+      "timestamp": "2023-10-06T12:00:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"question\": \"When did you sell it?\",\n    \"step\": 1,\n    \"options\": [\"today\", \"yesterday\", \"this week\"],\n    \"confirmation\": \"\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Sales Recording Agent\",\n    \"timestamp\": \"2023-10-06T12:00:00Z\"\n  }\n}"
+}

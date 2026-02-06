@@ -1,0 +1,67 @@
+{
+  "agent_name": "Summary Companion Agent",
+  "agent_id": "69858cc8c613a65b3c41947c",
+  "agent_purpose": "weekly_summary",
+  "description": "Provides weekly review conversations celebrating achievements and offering encouragement",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "weekSummary": "string",
+      "wins": [
+        "string"
+      ],
+      "concerns": [
+        "string"
+      ],
+      "encouragement": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "weekSummary": "It was a good week for you!",
+      "wins": [
+        "You recorded sales 5 times this week",
+        "You consistently tracked your expenses",
+        "You identified a pattern of increased sales over the weekend"
+      ],
+      "concerns": [
+        "Expenses were a bit high, but that's okay",
+        "Consider dedicating some time to marketing"
+      ],
+      "encouragement": "This coming week, try to record sales daily - you've got this! Keep up the wonderful work!"
+    },
+    "metadata": {
+      "agent_name": "Summary Companion Agent",
+      "timestamp": "2023-10-07T10:00:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T06:42:18.752864",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "weekSummary": "It was a good week for you!",
+      "wins": [
+        "You recorded sales 5 times this week",
+        "You consistently tracked your expenses",
+        "You identified a pattern of increased sales over the weekend"
+      ],
+      "concerns": [
+        "Expenses were a bit high, but that's okay",
+        "Consider dedicating some time to marketing"
+      ],
+      "encouragement": "This coming week, try to record sales daily - you've got this! Keep up the wonderful work!"
+    },
+    "metadata": {
+      "agent_name": "Summary Companion Agent",
+      "timestamp": "2023-10-07T10:00:00Z"
+    }
+  },
+  "test_passed": true
+}

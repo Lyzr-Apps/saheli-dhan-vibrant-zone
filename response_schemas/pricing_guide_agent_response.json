@@ -1,0 +1,46 @@
+{
+  "agent_name": "Pricing Guide Agent",
+  "agent_id": "69858ce46417bacaca9cf927",
+  "agent_purpose": "pricing_guidance",
+  "description": "Provides gentle pricing suggestions based on selling patterns and market comparisons",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "suggestion": "string",
+      "reasoning": "string",
+      "isOptional": "boolean"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "suggestion": "You might consider slightly adjusting your prices. Other people selling homemade pickles usually charge around 200-250, but if you're charging less, you could think about adding a little more value to your hard work. Your pickle is really good - you could try a small increase!",
+      "reasoning": "In the market, similar homemade pickles tend to sell for a bit more, reflecting the quality and effort involved. Your hard work deserves good value, so your pricing can match market standards.",
+      "isOptional": true
+    },
+    "metadata": {
+      "agent_name": "Pricing Guide Agent",
+      "timestamp": "ISO timestamp"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T06:42:25.685622",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "suggestion": "You might consider slightly adjusting your prices. Other people selling homemade pickles usually charge around 200-250, but if you're charging less, you could think about adding a little more value to your hard work. Your pickle is really good - you could try a small increase!",
+      "reasoning": "In the market, similar homemade pickles tend to sell for a bit more, reflecting the quality and effort involved. Your hard work deserves good value, so your pricing can match market standards.",
+      "isOptional": true
+    },
+    "metadata": {
+      "agent_name": "Pricing Guide Agent",
+      "timestamp": "ISO timestamp"
+    }
+  },
+  "test_passed": true
+}
